@@ -151,7 +151,7 @@ public class SearchActivity extends Activity implements OnMapReadyCallback {
         txt_FoodName.setText(foodName);
         txt_Kcal.setText(kcal + " kCal");
         double dist = new GetDist().getDist((int)kcal);
-        String dist_Text = String.format("이동해야 할 거리 : %f KM",dist);
+        String dist_Text = String.format("이동해야 할 거리 : %.3f KM",dist);
         txt_Dist.setText(dist_Text);
 
         // 이미지 로드
