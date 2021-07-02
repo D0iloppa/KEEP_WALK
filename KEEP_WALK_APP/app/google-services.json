@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853533918734",
+    "project_id": "keepwalk-9930e",
+    "storage_bucket": "keepwalk-9930e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853533918734:android:208bd19db2a7fbd8f11e5f",
+        "android_client_info": {
+          "package_name": "com.doiloppa.keepwalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853533918734-0skhph8vfrpb3lge5beg52dp8kerbo30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgc-Bx4PNgfevcE0vdtXvAP4RtkI5rBqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853533918734-0skhph8vfrpb3lge5beg52dp8kerbo30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

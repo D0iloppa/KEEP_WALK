@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#cdcdcd"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#02007c"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:fontFamily="@font/fontstyle"
+            android:text="WELCOME TO KEEP WALK"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:text="_"
+                android:textColor="#ACACAC"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:text="ㅁ"
+                android:textColor="#ACACAC"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_Close"
+                android:textColor="#000000"
+                android:text="X"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:onClick="onClose"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:padding="10dp"
+           android:gravity="center_vertical|center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:textColor="#000"
+               android:layout_gravity="center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:text="Email"/>
+
+           <EditText
+               android:id="@+id/edt_Id"
+               android:textColor="#000"
+               android:layout_gravity="center_vertical"
+               android:background="#ffffff"
+               android:layout_width="230dp"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center_vertical|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="PW"/>
+
+            <EditText
+                android:id="@+id/edt_Pw"
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:inputType="textPassword"
+                android:background="#ffffff"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_SignIn"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="SIGN IN"
+            android:textColor="#000000"
+            android:backgroundTint="#EDEBEB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center_vertical|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Don't you have an account yet?"/>
+
+            <TextView
+                android:id="@+id/txt_SignUp"
+                android:text="SIGN UP"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#002AFF"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Gg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google" />
+            <ImageView
+                android:id="@+id/img_Tw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twit" />
+            <ImageView
+                android:id="@+id/img_Fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebk"/>
+            <ImageView
+                android:id="@+id/img_Ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/insta"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
