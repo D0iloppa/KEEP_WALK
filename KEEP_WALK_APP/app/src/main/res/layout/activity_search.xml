@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="290dp"
-    android:layout_height="400dp"
+    android:layout_height="wrap_content"
     android:background="#cdcdcd"
     tools:context=".SearchActivity">
 
@@ -93,13 +93,15 @@
             android:text="음식 검색 : " />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edt_Search"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="5dp"
             android:background="#fff"
-            android:hint="먹을 음식"
+            android:textColor="#000"
+            android:hint="먹을 음식 입력"
+            android:textColorHint="#838383"
             android:inputType="textPersonName" />
 
         <Button
@@ -116,6 +118,7 @@
 
 
     <com.naver.maps.map.MapView
+        android:padding="5dp"
         android:id="@+id/map_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sch_mainArea"
@@ -124,6 +127,61 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="15dp"/>
+    <View
+        android:id="@+id/empty_Area"
+        app:layout_constraintTop_toBottomOf="@+id/map_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_search_result"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_Area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_Food"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Food name"
+                android:textColor="#000"
+                android:id="@+id/txt_FoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_kcal"
+                android:textColor="#000"
+                android:text="0 kcal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_distGoal"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text="이동해야 할 거리 : 0 KM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
